@@ -1,7 +1,8 @@
 ##
 changelog:
+
 python2 -> python3
-cipher
+cipher defaults to aes128-ctr
 
 
 
