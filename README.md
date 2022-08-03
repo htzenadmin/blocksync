@@ -1,7 +1,8 @@
 ##
 changelog:
 
-python2 -> python3
+python2 -> python3 on remote server
+
 cipher defaults to aes128-ctr
 
 
