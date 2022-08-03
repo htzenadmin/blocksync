@@ -1,3 +1,10 @@
+##
+changelog:
+python2 -> python3
+cipher
+
+
+
 ## About
 This script is used to synchronize (large) files to a local/remote destination using a incremental algorithm. Devices are used as regular files and can be synchronized, too.
 
