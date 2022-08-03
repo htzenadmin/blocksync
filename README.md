@@ -26,8 +26,13 @@ blocksync.py is also a workaround for a limitation when using [rsync](https://rs
 ## Usage
 Please make sure that the source file isn't changed during sync, blocksync.py will **not** notice any changes made at file positions which were already copied. You may want to boot a live linux ([grml](https://grml.org/), [knoppix](http://www.knoppix.org), [systemrescuecd](http://www.system-rescue-cd.org) etc.) if you want to sync the system drives from a running machine.
 
-### Synchronize to a file on remote server
-`root@source# python blocksync.py /dev/source/file user@destination.example.com /path/to/destination/file`
+### Synchronize to remote
+
+python3 blocksync.py LOCAL_LV user@IP.IP.IP.IP DESTINATION_LV_RAW
+sample:
+python3 blocksync.py /dev/vol00/kvmxxx_snap user@IP.IP.IP.IP /dev/vol00/vm-kvmXX-disk-0
+
+
 
 ### Synchronize to a local file
 `root@source# python blocksync.py /dev/source/file localhost /path/to/destination/file`
